@@ -1,21 +1,28 @@
-<div class="bg-gradient-to-r from-white to-blue-200">
-    <div class="w-9/12 m-auto py-16 min-h-screen flex items-center justify-center">
-        <div class="bg-white shadow overflow-hidden sm:rounded-lg pb-8">
-            <div class="border-t border-gray-200 text-center pt-8">
-                <h1 class="text-9xl font-bold">404</h1>
-                <h1 class="text-6xl font-medium py-8">Lo sentimos! Página no encontrada.</h1>
-                <p class="text-2xl pb-8 px-12 font-medium">Oops! La página que estás intentando ver no existe. Puede que
-                    se haya movido o eliminado.</p>
-                <button
-                    class="text-black bg-gradient-to-r from-blue-200 to-fondoMain hover:from-blue-300 hover:to-fondoMain font-semibold px-6 py-3 rounded-md mr-6 transition duration-300"
-                    [routerLink]="['/']">
-                    Volver al inicio
-                </button>
-                <button
-                    class="text-black bg-gradient-to-r from-blue-200 to-fondoMain hover:from-blue-300 hover:to-fondoMain f font-semibold px-6 py-3 rounded-md"
-                    [routerLink]="['/contactUs']">
-                    Contactanos
-                </button>
+<div class="bg-gradient-to-r from-white to-blue-200 min-h-screen flex items-center justify-center">
+    <div class="w-11/12 md:w-9/12 max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="border-t border-gray-200 text-center pt-8 px-4">
+                <h1 class="text-6xl md:text-9xl font-bold text-gray-800">404</h1>
+                <h2 class="text-3xl md:text-6xl font-medium py-4 md:py-8">Lo sentimos! Página no encontrada.</h2>
+                <p class="text-base md:text-2xl pb-8 px-4 md:px-12 font-medium text-gray-600">
+                    Oops! La página que estás intentando ver no existe.
+                    Puede que se haya movido o eliminado.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 px-4 pb-8">
+                    <button class="text-black bg-gradient-to-r from-blue-200 to-fondoMain 
+                               hover:from-blue-300 hover:to-fondoMain 
+                               font-semibold px-6 py-3 rounded-md 
+                               transition duration-300 
+                               w-full sm:w-auto" [routerLink]="['/']">
+                        Volver al inicio
+                    </button>
+                    <button class="text-black bg-gradient-to-r from-blue-200 to-fondoMain 
+                               hover:from-blue-300 hover:to-fondoMain 
+                               font-semibold px-6 py-3 rounded-md 
+                               w-full sm:w-auto" [routerLink]="['/contactUs']">
+                        Contáctanos
+                    </button>
+                </div>
             </div>
         </div>
     </div>
