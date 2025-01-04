@@ -1,5 +1,5 @@
 <div class="w-full">
-    <div class="flex  min-h-[648px]">
+    <div class="flex min-h-[648px]">
         <div class="flex items-center px-6 py-8 justify-center md:px-12 lg:w-1/2 z-10">
             <div>
                 <h2 class="text-2xl lg:text-3xl font-normal text-gray-800 md:text-4xl">
@@ -13,64 +13,55 @@
                 </p>
                 <button class="flex justify-center lg:justify-start mt-8">
                     <a class="px-6 lg:px-8 py-3 bg-green-500 text-white text-sm lg:text-base font-medium rounded-md hover:bg-green-600 hover:italic transition duration-300"
-                        href="#">
+                        [routerLink]="['/products']">
                         Descubre más.
                     </a>
                 </button>
             </div>
         </div>
-        <!-- img -->
-        <div class="hidden lg:block lg:w-1/2" style="clip-path:polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
-            <div class="h-full w-full bg-no-repeat bg-contain bg-right-top"
-                style="background-image: url('/images/doc2.png')">
-            </div>
+        <!-- Carrusel -->
+        <div class="hidden lg:flex lg:w-1/2 items-center justify-center">
+            <app-carousel></app-carousel>
         </div>
     </div>
 
-    <!-- Linea -->
-    <div class="border-t-2 border-black"></div>
+    <!-- linea -->
+    <div class="border-t-2 mx-10 border-black"></div>
 
     <div class="mt-9">
         <h2 class="text-3xl font-bold text-center mb-4">Nuestros equipos.</h2>
         <p class="text-center text-l mb-8">Elija entre una gran variedad de equipos certificados.</p>
     </div>
 
-    <div class="flex flex-row mt-4 mb-8 ">
+    <div class="flex flex-wrap justify-center gap-6 mt-4 mb-8">
         <div
-            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] ">
-            <div class="min-h-[256px]">
-                <img src="/images/gabinete.jpeg" class="w-full" />
+            class="bg-white shadow-lg w-full max-w-sm rounded-lg overflow-hidden mx-auto transition-transform transform hover:scale-105 hover:shadow-xl">
+            <div class="min-h-[200px]">
+                <img src="/images/gabinete.jpeg" class="w-full object-cover" />
             </div>
-
             <div class="p-6">
                 <h3 class="text-gray-800 text-xl font-bold">Equipos de gabinete</h3>
-                <p class="mt-4 text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Sed auctor auctor
-                    arcu,
-                    at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
-                    auctor
-                    arcu,
-                    at fermentum dui. Maecenas.
+                <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui.
                 </p>
-                <button class="flex justify-center lg:justify-start mt-8" [routerLink]="['/productsGab']">
+                <button class="flex justify-center mt-4" [routerLink]="['/productsGab']">
                     <span
-                        class="px-6 lg:px-8 py-3 bg-green-500 text-white text-sm lg:text-base font-medium rounded-md hover:bg-green-600 hover:italic transition duration-300">
+                        class="px-6 py-3 bg-green-500 text-white text-sm font-medium rounded-md hover:bg-green-600 transition duration-300">
                         Descubre más.
                     </span>
                 </button>
             </div>
         </div>
-        <!-- 2 -->
 
+        <!-- 2 -->
         <div
-            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] ">
+            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] transition-transform transform hover:scale-105 hover:shadow-lg">
             <div class="min-h-[256px]">
                 <img src="/images/completo.jpg" class="w-full" />
             </div>
-
             <div class="p-6">
                 <h3 class="text-gray-800 text-xl font-bold">Equipos Completos</h3>
-                <p class="mt-4 text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <p class="mt-2 text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit. Sed auctor auctor
                     arcu,
                     at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
@@ -78,27 +69,24 @@
                     arcu,
                     at fermentum dui. Maecenas.
                 </p>
-                <button  class="flex justify-center lg:justify-start mt-8" [routerLink]="['/productsComp']">
+                <button class="flex justify-center lg:justify-start mt-8" [routerLink]="['/productsComp']">
                     <span
                         class="px-6 lg:px-8 py-3 bg-green-500 text-white text-sm lg:text-base font-medium rounded-md hover:bg-green-600 hover:italic transition duration-300">
                         Descubre más.
                     </span>
                 </button>
-
             </div>
         </div>
 
         <!-- 3 -->
-
         <div
-            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] ">
+            class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] transition-transform transform hover:scale-105 hover:shadow-lg">
             <div class="min-h-[256px]">
                 <img src="/images/portatiles.png" class="w-full" />
             </div>
-
             <div class="p-6">
-                <h3 class="text-gray-800 text-xl font-bold">Equipos Portatiles</h3>
-                <p class="mt-4 text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <h3 class="text-gray-800 text-xl font-bold">Equipos Portátiles</h3>
+                <p class="mt-2 text-sm text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit. Sed auctor auctor
                     arcu,
                     at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor
@@ -114,6 +102,5 @@
                 </button>
             </div>
         </div>
-
     </div>
 </div>
