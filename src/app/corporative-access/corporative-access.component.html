@@ -1,0 +1,80 @@
+<section class="min-h-screen bg-gradient-to-r from-blue-100 to-blue-200 flex items-center justify-center p-6">
+    <div class="container mx-auto max-w-4xl">
+        <div class="bg-white shadow-2xl rounded-xl overflow-hidden flex items-center justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+                <!-- Columna de Formulario -->
+                <div class="p-8 md:p-12 flex items-center justify-center">
+                    <div class="w-full max-w-md">
+                        <div class="text-center mb-8">
+                            <img src="./images/smvSinFondo.png" alt="Logo" class="w-48 mx-auto mb-4">
+                            <h2 class="text-2xl font-bold text-gray-800">SMV Medical. <br> Acceso Corporativo.</h2>
+                        </div>
+
+                        <form class="space-y-6">
+                            <div class="relative">
+                                <input type="email" id="email"
+                                    class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-500"
+                                    placeholder="Ingresa tu correo electrónico" />
+                                <label for="email"
+                                    class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                                    Correo Electrónico
+                                </label>
+                            </div>
+
+                            <div class="relative">
+                                <input type="password" id="password"
+                                    class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-500"
+                                    placeholder="Ingresa tu contraseña" />
+                                <label for="password"
+                                    class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                                    Contraseña
+                                </label>
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <a [routerLink]="['/']" class="text-sm text-blue-600 hover:text-blue-500 
+                                    transition duration-300 ease-in-out 
+                                    transform hover:-translate-y-0.5 
+                                    hover:scale-105 
+                                    hover:underline">
+                                    ¿Olvidaste tú contraseña?
+                                </a>
+                            </div>
+
+                            <button type="submit" class="w-full py-3 px-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-md 
+                                transition duration-500 ease-in-out 
+                                transform hover:-translate-y-1 
+                                hover:scale-105 
+                                hover:shadow-xl 
+                                active:scale-95 
+                                focus:outline-none 
+                                focus:ring-2 
+                                focus:ring-blue-500 
+                                focus:ring-opacity-50
+                                relative 
+                                overflow-hidden
+                                group">
+                                <span
+                                    class="absolute top-0 left-0 w-full h-full bg-blue-700 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></span>
+                                Inicia Sesion
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div
+                    class="hidden md:flex md:items-center md:justify-center bg-gradient-to-br from-blue-400 to-blue-700 text-white p-12">
+                    <div class="max-w-md text-center">
+                        <h3 class="text-2xl font-semibold mb-4">Somos mas que una <span
+                                class="font-bold">compañía</span></h3>
+                        <p class="text-sm opacity-80">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque similique adipisci?
+                            Alias, neque quae! Tempore vitae maxime nostrum dicta totam praesentium consectetur commodi,
+                            unde beatae pariatur, dolorem harum placeat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

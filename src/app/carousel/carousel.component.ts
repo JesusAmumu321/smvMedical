@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-carousel',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
 })
@@ -11,30 +12,45 @@ export class CarouselComponent implements OnInit, OnDestroy {
   items = [
     {
       title: 'Equipos de gabinete',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui.',
       image: '/images/slider1.png',
-      link: '/productsGab',
+      text: {
+        heading: 'Distribuidor autorizado de la marca',
+        subheading: ' Terason.',
+        paragraph:
+          'De las mejores marcas, para los mejores establecimientos. Con los mejores planes de financiamiento.',
+      },
     },
     {
       title: 'Equipos Completos',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui.',
       image: '/images/slider2.png',
-      link: '/productsComp',
+      text: {
+        heading: 'Imagenes de alta precisión',
+        subheading: 'al alcance de tu mano.',
+        paragraph: 'Equipos de alta calidad para los mejores resultados.',
+      },
     },
     {
       title: 'Equipos Portátiles',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui.',
       image: '/images/slider3.png',
-      link: '/productsPor',
+      text: {
+        heading: 'Renueva fácil,',
+        subheading: 'tomamos tu equipos a cuenta.',
+        paragraph: '¡Por una mejor calidad!.',
+      },
+    },
+    {
+      title: 'Equipos en General',
+      image: '/images/slider3.png',
+      text: {
+        heading: '¿Tienes problemas con tu equipo?',
+        subheading: 'Nosotros te asesoramos en todas las marcas.',
+      },
     },
   ];
 
-  currentIndex: number = 0;
-  intervalId: any;
-  isTransitioning: boolean = false;
+  indexAct: number = 0;
+  interID: any;
+  enTransicion: boolean = false;
 
   ngOnInit() {
     this.startAutoSlide();
@@ -45,26 +61,26 @@ export class CarouselComponent implements OnInit, OnDestroy {
   }
 
   startAutoSlide() {
-    this.intervalId = setInterval(() => {
+    this.interID = setInterval(() => {
       this.next();
-    }, 5000); /// milisecs
+    }, 5000);
   }
 
   stopAutoSlide() {
-    if (this.intervalId) {
-      clearInterval(this.intervalId);
+    if (this.interID) {
+      clearInterval(this.interID);
     }
   }
 
   next() {
-    this.isTransitioning = true;
+    this.enTransicion = true;
     setTimeout(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.items.length;
-      this.isTransitioning = false;
-    }, 500); // debe de estar igual q el css
+      this.indexAct = (this.indexAct + 1) % this.items.length;
+      this.enTransicion = false;
+    }, 500);
   }
 
   onImageLoad() {
-    this.isTransitioning = false;
+    this.enTransicion = false;
   }
 }
