@@ -12,7 +12,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
   items = [
     {
       title: 'Equipos de gabinete',
-      image: '/images/slider1.png',
+      image: '/images/slide1.jpg',
       text: {
         heading: 'Distribuidor autorizado de la marca',
         subheading: ' Terason.',
@@ -22,7 +22,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Equipos Completos',
-      image: '/images/slider2.png',
+      image: '/images/slide2.png',
       text: {
         heading: 'Imagenes de alta precisión',
         subheading: 'al alcance de tu mano.',
@@ -31,7 +31,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Equipos Portátiles',
-      image: '/images/slider3.png',
+      image: '/images/slide3.png',
       text: {
         heading: 'Renueva fácil,',
         subheading: 'tomamos tu equipos a cuenta.',
@@ -40,7 +40,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
     },
     {
       title: 'Equipos en General',
-      image: '/images/slider3.png',
+      image: '/images/slide4.png',
       text: {
         heading: '¿Tienes problemas con tu equipo?',
         subheading: 'Nosotros te asesoramos en todas las marcas.',
