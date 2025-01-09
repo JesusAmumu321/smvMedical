@@ -15,9 +15,9 @@ export class CarouselComponent implements OnInit, OnDestroy {
       image: '/images/slide1.jpg',
       text: {
         heading: 'Distribuidor autorizado de la marca',
-        subheading: ' Terason.',
+        subheading: 'Terason.',
         paragraph:
-          'De las mejores marcas, para los mejores establecimientos. Con los mejores planes de financiamiento.',
+          'Con los mejores planes de financiamiento.',
       },
     },
     {
@@ -35,7 +35,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
       text: {
         heading: 'Renueva fácil,',
         subheading: 'tomamos tu equipos a cuenta.',
-        paragraph: '¡Por una mejor calidad!.',
+        paragraph: '¡Por un mejor diagnostico!.',
       },
     },
     {
