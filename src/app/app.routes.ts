@@ -7,6 +7,8 @@ import { ProductsComponent } from './products/products.component';
 import { TermsComponent } from './terms/terms.component';
 import { ServicesComponent } from './services/services.component';
 import { CorporativeAccessComponent } from './corporative-access/corporative-access.component';
+import { AdministrativeMenuComponent } from './administrative-menu/administrative-menu.component';
+
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -16,5 +18,7 @@ export const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'terms-conditions', component: TermsComponent },
   { path: 'corporative-access', component: CorporativeAccessComponent },
+  { path: 'corpo-menu', component: AdministrativeMenuComponent },
+
   { path: '**', component: NotFoundComponent },
 ];
