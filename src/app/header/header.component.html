@@ -39,6 +39,12 @@
                         </a>
                     </li>
                     <li class="lg:inline-block">
+                        <a [routerLink]="['/products']" (click)="toggleMenu()"
+                            class="text-[#333] hover:text-[#82a537] font-semibold block text-[15px] lg:inline-block whitespace-nowrap">
+                            Equipos
+                        </a>
+                    </li>
+                    <li class="lg:inline-block">
                         <a [routerLink]="['/services']" (click)="toggleMenu()"
                             class="hover:text-[#82a537] font-semibold text-[#333] block text-[15px] lg:inline-block whitespace-nowrap">
                             Servicios
