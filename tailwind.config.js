@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         fondoMain: "#D1DCFF",
         smv: "#518c35",
+        texto: "#2B5F8C",
       },
     },
   },
