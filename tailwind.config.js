@@ -8,6 +8,7 @@ module.exports = {
         smv: "#518c35",
         texto: "#2B5F8C",
         fondoClaro: "#81A632",
+        letrasAzules: "#1C294B",
       },
     },
   },
