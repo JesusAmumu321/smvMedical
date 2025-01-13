@@ -18,7 +18,6 @@ export const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'terms-conditions', component: TermsComponent },
   { path: 'corporative-access', component: CorporativeAccessComponent },
-  { path: 'corpo-menu', component: AdministrativeMenuComponent },
-
+  { path: 'corpo-menu', component: AdministrativeMenuComponent }, //PARA MENU DE ADMINISTRADOR
   { path: '**', component: NotFoundComponent },
 ];
