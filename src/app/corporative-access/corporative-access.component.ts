@@ -5,8 +5,8 @@ import { RouterLink } from '@angular/router';
   selector: 'app-corporative-access',
   imports: [RouterLink],
   templateUrl: './corporative-access.component.html',
-  styleUrl: './corporative-access.component.css'
+  styleUrl: './corporative-access.component.css',
 })
 export class CorporativeAccessComponent {
-
+  
 }
